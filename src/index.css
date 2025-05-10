@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-wedding-accent text-wedding-text font-sans;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    @apply font-serif;
+  }
+}
+
+.divider {
+  @apply flex items-center my-8;
+}
+
+.divider::before,
+.divider::after {
+  @apply flex-grow border-t border-wedding-primary content-[''];
+}
+
+.divider span {
+  @apply mx-4 text-wedding-primary;
+}
+
+.fancy-border {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1C5.41828 1 9 4.58172 9 9C9 4.58172 12.5817 1 17 1C12.5817 1 9 4.58172 9 9C9 13.4183 5.41828 17 1 17C5.41828 17 9 13.4183 9 9C9 13.4183 12.5817 17 17 17' stroke='%23d4af7a' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  @apply border border-wedding-primary border-opacity-40 p-8 rounded-md relative;
+}
+
+.fancy-border::before {
+  content: "";
+  @apply absolute top-0 left-0 w-4 h-4 border-t border-l border-wedding-primary rounded-tl;
+}
+
+.fancy-border::after {
+  content: "";
+  @apply absolute top-0 right-0 w-4 h-4 border-t border-r border-wedding-primary rounded-tr;
+}
