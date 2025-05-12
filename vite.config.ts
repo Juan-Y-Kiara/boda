@@ -19,4 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-})); 
+  base: '/boda/', // Añadido: nombre de tu repositorio para GitHub Pages
+}));
