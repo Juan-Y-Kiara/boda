@@ -15,7 +15,7 @@ const EventDetails = () => {
           <Card className="overflow-hidden border-none shadow-lg">
             <div className="relative h-64">
               <img 
-                src="/wedding-gallery/navidad3.png" 
+                src="wedding-gallery/navidad3.png" 
                 alt="Recepción" 
                 className="object-cover w-full h-full"
               />
@@ -53,7 +53,7 @@ const EventDetails = () => {
           <Card className="overflow-hidden border-none shadow-lg">
             <div className="relative h-64">
               <img 
-                src="/wedding-gallery/vestimenta.jpg" 
+                src="wedding-gallery/vestimenta.jpg" 
                 alt="Vestimenta" 
                 className="object-cover w-full h-full"
               />

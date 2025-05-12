@@ -100,7 +100,7 @@ const Hero = () => {
       {/* Audio Element - hidden from view */}
       <audio 
         ref={audioRef} 
-        src="/music/wedding-song.mp3" // Ajusta la ruta a tu archivo de música
+        src="music/wedding-song.mp3" // Ajusta la ruta a tu archivo de música
         loop 
       />
       

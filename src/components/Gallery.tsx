@@ -3,12 +3,12 @@ import React from "react";
 
 const Gallery = () => {
   const images = [
-    "/wedding-gallery/inicio.png",
-    "/wedding-gallery/viaje1.png",
-    "/wedding-gallery/viaje2.png",
-    "/wedding-gallery/viaje3.png",
-    "/wedding-gallery/viajes.png",
-    "/wedding-gallery/izam.jpg",
+    "wedding-gallery/inicio.png",
+    "wedding-gallery/viaje1.png",
+    "wedding-gallery/viaje2.png",
+    "wedding-gallery/viaje3.png",
+    "wedding-gallery/viajes.png",
+    "wedding-gallery/izam.jpg",
    
   ];
 

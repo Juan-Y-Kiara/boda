@@ -51,7 +51,7 @@ const CountdownTimer = () => {
 
   return (
     <section className="py-16 bg-wedding-light bg-opacity-90 relative bg-cover bg-center"       style={{
-        background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/wedding-gallery/cuenta.png')`,
+        background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('wedding-gallery/cuenta.png')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
