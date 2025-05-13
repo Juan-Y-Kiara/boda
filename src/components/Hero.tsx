@@ -5,6 +5,23 @@ const Hero = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [autoplayBlocked, setAutoplayBlocked] = useState(false);
 
+  // Scroll to RSVP function
+  const scrollToRsvp = () => {
+    // Find the RsvpForm element by its ID
+    const rsvpElement = document.getElementById('rsvp');
+    
+    if (rsvpElement) {
+      // Smooth scroll to the element
+      rsvpElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    } else {
+      // Fallback if element not found - scroll to a specific location
+      window.location.hash = '#/rsvp';
+    }
+  };
+
   useEffect(() => {
     // Intenta reproducir automáticamente cuando el componente se monte
     if (audioRef.current) {
@@ -160,12 +177,12 @@ const Hero = () => {
         <p className="mt-8 text-lg text-white max-w-2xl mx-auto">
           Les invitamos a acompañarnos en este día tan especial donde celebraremos nuestro amor
         </p>
-        <a
-          href="#rsvp"
+        <button
+          onClick={scrollToRsvp}
           className="mt-10 inline-block px-8 py-3 border-2 border-wedding-primary text-wedding-accent hover:bg-wedding-primary hover:text-white transition-colors"
         >
           Confirmar Asistencia
-        </a>
+        </button>
       </div>
     </section>
   );
